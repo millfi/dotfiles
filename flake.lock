@@ -1,0 +1,66 @@
+{
+  "nodes": {
+    "comfyui-src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1770272015,
+        "narHash": "sha256-mmxPI40DpRL64AOEBtcPFjOmbF1IYxb+wE5ZqBgo/QY=",
+        "owner": "Comfy-Org",
+        "repo": "ComfyUI",
+        "rev": "cb459573c8fa025bbf9ecf312f6af376d659f567",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Comfy-Org",
+        "ref": "v0.12.3",
+        "repo": "ComfyUI",
+        "type": "github"
+      }
+    },
+    "home-manager": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1773422513,
+        "narHash": "sha256-MPjR48roW7CUMU6lu0+qQGqj92Kuh3paIulMWFZy+NQ=",
+        "owner": "nix-community",
+        "repo": "home-manager",
+        "rev": "ef12a9a2b0f77c8fa3dda1e7e494fca668909056",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-community",
+        "repo": "home-manager",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1773282481,
+        "narHash": "sha256-b/GV2ysM8mKHhinse2wz+uP37epUrSE+sAKXy/xvBY4=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "fe416aaedd397cacb33a610b33d60ff2b431b127",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "comfyui-src": "comfyui-src",
+        "home-manager": "home-manager",
+        "nixpkgs": "nixpkgs"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
