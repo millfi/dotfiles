@@ -10,6 +10,9 @@
 , qt6
 , fcitx5
 , protobuf
+, shaderc
+, vulkan-loader
+, vulkan-headers
 }:
 
 let
@@ -98,6 +101,7 @@ stdenv.mkDerivation rec {
     git
     swiftToolchain
     qt6.wrapQtAppsHook
+    shaderc
   ];
 
   buildInputs = [
@@ -105,12 +109,14 @@ stdenv.mkDerivation rec {
     protobuf
     qt6.qtbase
     qt6.qttools
+    vulkan-loader
+    vulkan-headers
   ];
 
   cmakeFlags = [
     "-DCMAKE_BUILD_TYPE=Release"
     "-DHAZKEY_SERVER_STATIC_SWIFT_STDLIB=OFF"
-    "-DGGML_VULKAN=OFF"
+    "-DGGML_VULKAN=ON"
   ];
 
   preBuild = ''
